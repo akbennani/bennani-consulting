@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="nl" data-lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bennani Consulting — Data & AI Consulting</title>
+<meta name="description" content="Bennani Consulting helpt organisaties groeien met data-gedreven strategie en AI-oplossingen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { DEFAULT: '#0b1220', light: '#131c31', border: '#1f2a44' },
+          gold: { DEFAULT: '#c9a24b', light: '#e0c27a' }
+        },
+        fontFamily: {
+          serif: ['"Playfair Display"', 'serif'],
+          sans: ['Inter', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html[data-lang="nl"] .lang-en { display: none; }
+  html[data-lang="en"] .lang-nl { display: none; }
+  html { scroll-behavior: smooth; }
+</style>
+</head>
+<body class="bg-navy text-slate-200 font-sans">
+
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-navy/90 backdrop-blur border-b border-navy-border">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+    <a href="#home" class="font-serif text-xl text-white tracking-wide">Bennani <span class="text-gold">Consulting</span></a>
+    <div class="hidden md:flex gap-8 text-sm text-slate-300">
+      <a href="#about" class="hover:text-gold transition">
+        <span class="lang-nl">Over mij</span><span class="lang-en">About</span>
+      </a>
+      <a href="#services" class="hover:text-gold transition">
+        <span class="lang-nl">Diensten</span><span class="lang-en">Services</span>
+      </a>
+      <a href="#projects" class="hover:text-gold transition">
+        <span class="lang-nl">Projecten</span><span class="lang-en">Projects</span>
+      </a>
+      <a href="#contact" class="hover:text-gold transition">Contact</a>
+    </div>
+    <button id="lang-toggle" class="text-xs border border-gold text-gold rounded px-3 py-1 hover:bg-gold hover:text-navy transition">
+      <span class="lang-nl">EN</span><span class="lang-en">NL</span>
+    </button>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="min-h-screen flex items-center border-b border-navy-border">
+  <div class="max-w-6xl mx-auto px-6 pt-32 pb-20">
+    <p class="text-gold uppercase tracking-[0.2em] text-sm mb-4">Data &amp; AI Consulting</p>
+    <h1 class="font-serif text-4xl md:text-6xl text-white leading-tight max-w-3xl">
+      <span class="lang-nl">Datagedreven groei voor ambitieuze organisaties.</span>
+      <span class="lang-en">Data-driven growth for ambitious organizations.</span>
+    </h1>
+    <p class="mt-6 max-w-2xl text-slate-400 text-lg">
+      <span class="lang-nl">Bennani Consulting ondersteunt bedrijven bij het vertalen van data naar concrete
+        strategische keuzes en werkende AI-oplossingen. Onafhankelijk, pragmatisch en resultaatgericht.</span>
+      <span class="lang-en">Bennani Consulting helps companies translate data into concrete strategic decisions
+        and working AI solutions. Independent, pragmatic and results-driven.</span>
+    </p>
+    <a href="#contact" class="inline-block mt-8 bg-gold text-navy font-medium px-6 py-3 rounded hover:bg-gold-light transition">
+      <span class="lang-nl">Neem contact op</span><span class="lang-en">Get in touch</span>
+    </a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="border-b border-navy-border">
+  <div class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-3 gap-12">
+    <div>
+      <p class="text-gold uppercase tracking-[0.2em] text-sm mb-2">
+        <span class="lang-nl">Over mij</span><span class="lang-en">About</span>
+      </p>
+      <h2 class="font-serif text-3xl text-white">Karim Bennani</h2>
+    </div>
+    <div class="md:col-span-2 text-slate-400 leading-relaxed space-y-4">
+      <p class="lang-nl">
+        Ik ben oprichter van Bennani Consulting en werk als zelfstandig data &amp; AI consultant.
+        Met ervaring in het bouwen van data-platformen en machine learning-oplossingen help ik
+        organisaties om betere beslissingen te nemen op basis van data. Momenteel werk ik als
+        eenmansbedrijf, met de ambitie om op termijn uit te breiden naar een klein, gespecialiseerd team.
+      </p>
+      <p class="lang-en">
+        I am the founder of Bennani Consulting and work as an independent data &amp; AI consultant.
+        With experience building data platforms and machine learning solutions, I help organizations
+        make better, data-informed decisions. I currently operate as a one-person business, with the
+        ambition to grow into a small, specialized team over time.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="border-b border-navy-border bg-navy-light">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <p class="text-gold uppercase tracking-[0.2em] text-sm mb-2">
+      <span class="lang-nl">Diensten</span><span class="lang-en">Services</span>
+    </p>
+    <h2 class="font-serif text-3xl text-white mb-12">
+      <span class="lang-nl">Waar ik bedrijven mee help</span><span class="lang-en">How I help companies</span>
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="border border-navy-border rounded-lg p-6 hover:border-gold transition">
+        <h3 class="font-serif text-xl text-white mb-3">
+          <span class="lang-nl">Data- &amp; AI-strategie</span><span class="lang-en">Data &amp; AI strategy</span>
+        </h3>
+        <p class="text-slate-400 text-sm leading-relaxed lang-nl">
+          Advies over waar data en AI het meeste waarde toevoegen aan uw organisatie, en een concreet
+          stappenplan om daar te komen.
+        </p>
+        <p class="text-slate-400 text-sm leading-relaxed lang-en">
+          Advice on where data and AI create the most value for your organization, plus a concrete
+          roadmap to get there.
+        </p>
+      </div>
+      <div class="border border-navy-border rounded-lg p-6 hover:border-gold transition">
+        <h3 class="font-serif text-xl text-white mb-3">
+          <span class="lang-nl">Data engineering &amp; platformen</span><span class="lang-en">Data engineering &amp; platforms</span>
+        </h3>
+        <p class="text-slate-400 text-sm leading-relaxed lang-nl">
+          Opzetten en onderhouden van betrouwbare data-pipelines en platformen, zodat data altijd
+          beschikbaar en bruikbaar is.
+        </p>
+        <p class="text-slate-400 text-sm leading-relaxed lang-en">
+          Building and maintaining reliable data pipelines and platforms, so data is always
+          available and usable.
+        </p>
+      </div>
+      <div class="border border-navy-border rounded-lg p-6 hover:border-gold transition">
+        <h3 class="font-serif text-xl text-white mb-3">
+          <span class="lang-nl">AI &amp; Machine Learning</span><span class="lang-en">AI &amp; Machine Learning</span>
+        </h3>
+        <p class="text-slate-400 text-sm leading-relaxed lang-nl">
+          Ontwikkelen en implementeren van voorspellende modellen en AI-oplossingen die aantoonbaar
+          resultaat opleveren.
+        </p>
+        <p class="text-slate-400 text-sm leading-relaxed lang-en">
+          Developing and implementing predictive models and AI solutions that deliver
+          measurable results.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="border-b border-navy-border">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <p class="text-gold uppercase tracking-[0.2em] text-sm mb-2">
+      <span class="lang-nl">Projecten</span><span class="lang-en">Projects</span>
+    </p>
+    <h2 class="font-serif text-3xl text-white mb-12">
+      <span class="lang-nl">Uitgelichte cases</span><span class="lang-en">Featured cases</span>
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="border border-navy-border rounded-lg p-6">
+        <p class="text-gold text-xs uppercase tracking-wide mb-2 lang-nl">Sector — Retail</p>
+        <p class="text-gold text-xs uppercase tracking-wide mb-2 lang-en">Sector — Retail</p>
+        <h3 class="font-serif text-lg text-white mb-2">
+          <span class="lang-nl">Klantnaam / project 1</span><span class="lang-en">Client name / project 1</span>
+        </h3>
+        <p class="text-slate-400 text-sm leading-relaxed lang-nl">Korte omschrijving van het project en het behaalde resultaat.</p>
+        <p class="text-slate-400 text-sm leading-relaxed lang-en">Short description of the project and the result achieved.</p>
+      </div>
+      <div class="border border-navy-border rounded-lg p-6">
+        <p class="text-gold text-xs uppercase tracking-wide mb-2 lang-nl">Sector — Horeca</p>
+        <p class="text-gold text-xs uppercase tracking-wide mb-2 lang-en">Sector — Hospitality</p>
+        <h3 class="font-serif text-lg text-white mb-2">
+          <span class="lang-nl">Klantnaam / project 2</span><span class="lang-en">Client name / project 2</span>
+        </h3>
+        <p class="text-slate-400 text-sm leading-relaxed lang-nl">Korte omschrijving van het project en het behaalde resultaat.</p>
+        <p class="text-slate-400 text-sm leading-relaxed lang-en">Short description of the project and the result achieved.</p>
+      </div>
+      <div class="border border-navy-border rounded-lg p-6">
+        <p class="text-gold text-xs uppercase tracking-wide mb-2 lang-nl">Sector — Finance</p>
+        <p class="text-gold text-xs uppercase tracking-wide mb-2 lang-en">Sector — Finance</p>
+        <h3 class="font-serif text-lg text-white mb-2">
+          <span class="lang-nl">Klantnaam / project 3</span><span class="lang-en">Client name / project 3</span>
+        </h3>
+        <p class="text-slate-400 text-sm leading-relaxed lang-nl">Korte omschrijving van het project en het behaalde resultaat.</p>
+        <p class="text-slate-400 text-sm leading-relaxed lang-en">Short description of the project and the result achieved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <p class="text-gold uppercase tracking-[0.2em] text-sm mb-2">Contact</p>
+    <h2 class="font-serif text-3xl text-white mb-6">
+      <span class="lang-nl">Laten we kennismaken</span><span class="lang-en">Let's get in touch</span>
+    </h2>
+    <p class="text-slate-400 max-w-xl mb-8 lang-nl">
+      Benieuwd wat Bennani Consulting voor uw organisatie kan betekenen? Neem gerust contact op.
+    </p>
+    <p class="text-slate-400 max-w-xl mb-8 lang-en">
+      Curious what Bennani Consulting can do for your organization? Feel free to reach out.
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 text-slate-300">
+      <a href="mailto:info@bennaniconsulting.nl" class="border border-gold text-gold rounded px-6 py-3 hover:bg-gold hover:text-navy transition text-center">
+        info@bennaniconsulting.nl
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="border border-navy-border rounded px-6 py-3 hover:border-gold hover:text-gold transition text-center">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-navy-border">
+  <div class="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500 flex flex-col md:flex-row justify-between gap-2">
+    <span>&copy; 2026 Bennani Consulting.</span>
+    <span class="lang-nl">KvK-nummer volgt</span>
+    <span class="lang-en">Chamber of Commerce number to follow</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
